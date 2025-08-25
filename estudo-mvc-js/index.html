@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lista de Contatos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<div class="Logo">
+			<h1><i class="fa fa-address-book"></i>Contatos Pessoais</h1>
+		</div>
+		<nav class="muda">
+			<ul>
+				<li><a href="#Cadastrar">Cadastrar Contato</a></li>
+				<li><a href="#lista">Listar Contatos</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="page" id="Cadastrar" >
+			<form>
+				<h1>Cadastrar Contato</h1>
+				<div  class="Container-caixa">
+					<label>Nome Contato:</label>
+					<input type="text" id="pessoa" placeholder="Digite informações do contato" autofocus="" onkeyup="views.contar()" >
+				</div>
+				<div  class="Container-caixa">
+					<label for="ph">Telefone:</label>
+					<input type="text" maxlength="11" id="Telefone" placeholder="Digite informações do contato"  onkeyup="views.contar()" />
+				</div>
+				<br>
+				<div class="Container-caixa">
+					<input type="button" value="Salvar Contato" id="adicionar"> 
+				</div>
+				<br>
+				<div  class="Container-caixa">
+					<p id="try_catch"></p>
+				</div>
+			</form>
+		</div>
+		<div class="page" id="lista">
+			<table>
+				<thead>
+					<tr>
+						<th>Informações de contato</th>
+						<th>Botão excluir</th>
+						<th>Botão Status</th>
+					</tr>
+				</thead>
+				<tbody id="lista_contatos">
+					
+				</tbody>
+			</table>
+		</div>
+		
+	</main>
+	<footer>
+		<p>&copy;Agenda de contatos desenvolvido para trabalho escolar</p>
+	</footer>
+	<script type="text/javascript"  src="model/Classe_contato.js"></script>
+	<script type="text/javascript" src="model/Tratar.js"></script>
+	<script type="text/javascript" src="controller/controlador.js"></script>
+	<script type="text/javascript" src="views/view.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

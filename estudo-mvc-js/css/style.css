@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+	padding:0;
+	margin:0;
+	font-family: 'Roboto', sans-serif;
+	 box-sizing: border-box;
+}
+:root{
+	--color-font:#006666;
+	--color-font_2:#FFF;
+}
+header{
+	align-items:center;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;	
+	background:var(--color-font);
+	padding:1.3rem;
+	box-shadow: 0px 5px 5px  #c9cfd0;
+}
+nav{
+	display:flex;
+	justify-content:flex-end;
+	flex:1;
+}
+nav ul{
+	display:flex;
+}
+nav li{
+	text-align:center;
+	list-style:none;
+	padding:0.5rem 0.6rem;
+}
+nav a{
+	color:var(--color-font_2);
+	text-decoration:none;
+
+}
+
+ h1{
+	font-size:0.7rem;
+	font-weight:inherit;
+	color:#000;
+	text-align:	center;
+}
+.Logo  h1{
+	font-size:1rem;
+	font-weight:inherit;
+	color:var(--color-font_2);
+}
+
+main{
+	width:90%;
+	margin:auto;
+	margin-top:4rem;
+}
+
+.Container-caixa{
+	display:flex;
+	flex-direction:column;
+}
+form{
+	width:100%;
+	/*box-shadow: 1px 5px 5px #eee;*/
+	padding:50px 50px;
+}
+label{
+	line-height:2rem;
+	font-size:0.8rem;
+}
+input{
+	padding:0.3rem;
+	outline:none;
+
+}
+input:focus{
+	transition:0.4s;
+   border:none;
+   border-bottom:1px solid var(--color-font); 
+   transition:0.2s;
+}
+input[type='button']{
+	border:none;
+	background:var(--color-font);
+	padding:0.4rem;
+	color:#fff;
+}
+
+.page{
+	align-items:center;
+	flex-direction:column;
+	justify-content:center;
+	height:100%;
+	display:none;
+}
+.page:not(:target){
+  display: none;
+}
+
+.page:target{
+  display: flex;
+   -webkit-animation: dados 1s;	
+}
+@-webkit-keyframes dados {
+    from { opacity: 0.5; margin-right:200px;}
+    to { opacity: 1;margin-top: 0px;}
+}
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: center;
+    font-weight:inherit;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    font-size:0.6rem;
+}
+table button{
+	border:none;
+	background:var(--color-font);
+	color:#fff;
+	padding:0.3rem 0.2rem;
+	font-size:0.6rem;
+}
+table button:hover{
+	opacity:0.8;
+}
+.cabeça{
+	background:red;
+}
+footer p{
+	text-align:center;
+	line-height:10rem;
+	color:#CDCDC1;
+	font-size:0.8rem;
+}
+.Logo i{
+	padding:10px;
+	font-size:1rem;
+}
+p{
+	text-align:center;
+	font-size:0.8rem;
+}
+.muda{
+	display:none;
+}
+header:hover > .muda{
+	display:flex;
+	transition:0.2s;
+}
+nav a{
+	font-size:0.9rem;
+}
+@media screen and (min-width:720px){
+header{
+	align-items:center;
+	display:flex;
+	justify-content:center;
+	flex-direction:row;		
+	background:var(--color-font);
+	padding:1.3rem;
+	box-shadow: 0px 5px 5px  #c9cfd0;
+}
+nav ul{
+	display:flex;
+	flex-direction:row;
+}
+main{
+	width:60%;
+	margin:auto;
+	margin-top:4rem;
+}
+form{
+	width:60%;
+	box-shadow: 1px 5px 5px #eee;
+	padding:50px 50px;
+}
+input{
+	padding:0.3rem;
+	outline:none;
+
+}
+ h1{
+	font-size:1rem;
+	font-weight:inherit;
+	color:#000;
+	text-align:	center;
+}
+input[type='button']{
+	border:none;
+	background:var(--color-font);
+	padding:0.6rem;
+	color:#fff;
+}
+p{
+	text-align:left;
+	font-size:1rem;
+}
+th, td {
+    padding: 10px;
+    font-size:1rem;
+}
+table button{
+	border:none;
+	background:var(--color-font);
+	color:#fff;
+	padding:0.5rem 1rem;
+	font-size:1rem;
+}
+.muda{
+	display:flex;
+}
+nav a{
+	font-size:1rem;
+}
+}

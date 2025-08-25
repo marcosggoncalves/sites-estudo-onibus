@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    outline: none;
+}
+
+html{
+    background: #fefefefe;
+}
+
+:root{
+    --color-header:#FFD600;
+    --color-1:#ffffff;
+    --color-2:#000000;
+}
+header{
+    background: var(--color-header);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 1px 1px #ededee;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav ul li{
+    margin-left: 10px;
+}
+
+header nav ul li:nth-child(2){
+    border: 1px solid var(--color-2);
+    padding: 0.4rem 2rem;
+}
+
+header nav ul li a{
+    font-weight: bold;
+    color: var(--color-2);
+}
+
+.logo img{
+    max-width: 7rem;
+}
+
+.container{
+    padding: 0.6rem 8rem;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.banner-titulo{
+    padding: 10px 10px;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid var(--color-header);    
+}
+
+.banner-titulo h1{
+    font-size: 1.2rem;
+}
+
+.container-fixed{
+    padding: 10px 20px;
+}
+
+.frota{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-carro{
+    margin-bottom: 1.8rem;
+    box-shadow: 1px 1px 1px 1px #ededee;
+    background: var(--color-1);
+}
+.card-carro-titulo {
+    margin-top: 1rem;
+}
+
+.card-carro-titulo h1{
+    text-align: center;
+    font-size: .8rem;
+}
+
+.card-carro-descricao{
+    padding: 20px 20px;
+}
+
+.card-carro-descricao p{
+    text-align: justify;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content div{
+    margin-top: .5rem;
+}
+
+.sub-header{
+    background: #f4f4f4;
+    padding: 5px 10px;
+}
+
+.sub-header span{
+    font-size: 1rem;
+}
+
+.sub-header input{
+    border: none;
+    width: 400px;
+    padding: 9px 10px;
+}
+
+.card-carro-btn{
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 10px 10px;
+}
+
+.card-carro-btn button{
+    border: none;
+    border: 1px solid var(--color-header);
+    background: transparent;
+    padding: 7px 20px;
+}
+
+.card-carro-btn button:hover{
+    cursor: pointer;
+    background: var(--color-header);
+}
+
+@media screen and (min-width: 992px) {
+    .container-fixed{
+        width: 80%;
+        margin: auto;
+        padding: 10px 0px;
+    }
+    .card-carro{
+        width: 270px;
+    }
+    .content{        
+        flex-direction: row;
+    }    
+    .content div{
+        margin-top: unset;
+    }
+}

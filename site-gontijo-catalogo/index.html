@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gontijo</title>
+    <link rel="stylesheet" href="src/style/main.css">
+</head>
+
+<body>
+    <main>
+        <header>
+           <div class="container-fixed">
+                <div class="logo">
+                    <img src="src/img/logo.png" alt="Logo">
+                </div>
+           </div>
+        </header>
+        <section class="sub-header">
+            <div class="content container-fixed">
+                <div>
+                    <span>Veiculos Encontrados: <b id="countResult">0</b></span>
+                </div>
+                <div>
+                    <form>
+                        <div>
+                            <input onkeyup="filter(value)" autocomplete type="search" name="search" id="search" placeholder="Digite sua pesquisa....">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="banner container-fixed">
+            <div class="banner-titulo">
+                <h1>Frota</h1>
+            </div>
+            <div class="frota" id="frota"></div>
+        </section>
+    </main>
+</body>
+
+<!-- Importar Arquivos -->
+<script src="src/javascript/data.js"></script>
+<script src="src/javascript/veiculos.js"></script>
+<script src="src/javascript/main.js"></script>
+
+</html>
