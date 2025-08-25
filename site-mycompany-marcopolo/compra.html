@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>M Company Compra veiculo</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+	 <header>
+        <div class="container_logo">
+            <a href="index.html"><img src="img/Marcopolo.png" class="logo"></a>
+        </div>
+      </header>
+      <main class="itens">
+	<form name="macho">
+	<legend>Cadastro Fretamento</legend>
+		<div class="Container-input">
+			<label for="nome">Nome:</label>	
+			<input type="text" id="nome" placeholder="Digite seu Nome Completo">
+		</div>
+		<div class="Container-input">
+			<label for="Cpf">CPF:</label>	
+			<input type="number" id="Cpf" placeholder="Digite seu CPF...">
+		</div>
+		<div class="Container-input row">
+				<label for="rg">RG:</label>	
+				<input type="number" id="rg"  placeholder="Digite seu RG...">
+			</div>
+			<div class="Container-input column">
+				<label for="email">Email:</label>	
+				<input type="text" id="email" placeholder="Digite seu Email...">
+			</div>
+			<div class="Container-input column">
+				<label for="Telefone">Telefone:</label>	
+				<input type="number" id="Telefone" placeholder="Digite seu Telefone...">
+			</div>
+		</div>
+		<legend>Tipo Pagamento</legend>
+		<div class="Container-input">
+			<label for="Pagamento">Forma de Pagamento:</label>	
+			<select id="Pagamento">
+				<option value="">Selecione uma opção pagamento</option>
+				<option value="Maestro">Cartão Maestro</option>
+				<option value="Visa">Cartão Visa</option>
+				<option value="MasterCard">Cartão MasterCard</option>
+				<option value="Elo">Cartão Elo</option>
+				<option value="Hiper">Cartão Hiper</option>
+			</select>
+		</div>
+		<div class="Container-input">
+			<label for="Parcelamento">Parcelamento:</label>	
+			<select  id="Parcelamento">
+				<option value="">Selecione uma opção de Parcelamento</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="50">50</option>
+				<option value="100">100</option>
+				<option value="144">144</option>
+				<option value="200">200</option>
+			</select>
+		</div>
+		<legend>Envio</legend>
+		<div class="Container-input">
+			<label for="endereço">Endereço</label>	
+			<input type="text" id="endereço" placeholder="Digite seu Endereço de entrega..">
+		</div>
+		<div class="Container-input">
+			<label for="Cep">Cep:</label>	
+			<input type="number" id="Cep" placeholder="Digite seu CEP...">
+		</div>
+		<div class="Container-input column">
+				<label for="Bairro">Bairro:</label>	
+				<input type="text" id="Bairro" placeholder="Digite seu Bairro...">
+		</div>
+		<div class="Container-input row">
+				<label for="Cidade">Cidade:</label>	
+				<input type="text" id="Cidade" placeholder="Digite sua Cidade de entrega...">
+			</div>
+			<div class="Container-input column">
+				<label for="Estado">Estado:</label>	
+				<input type="text" id="Estado" placeholder="Digite seu Estado..">
+			</div>
+			<div class="Container-input column">
+				<label for="Pais">Pais:</label>	
+				<input type="text" id="Pais" placeholder="Digite seu Pais..">
+			</div>
+		<div class="Container-input">
+			<input type="button"   id="form_compra" value="Finalizar Compra Veiculos" >
+		</div>
+	</form>
+</main>
+<script src="js/compra.js"></script>
+</body>    
+</html>

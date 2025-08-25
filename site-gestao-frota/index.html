@@ -1,0 +1,179 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Painel Controle Frota</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta http-equiv="refresh" content="100">
+  </head>
+  <body >
+    <header>
+      <div class="logo">
+        <img src="img/Logo_4.png">
+      </div> 
+      <div class="dropdown">
+        <button class="btn_abre">Painel Gen-Fro</button>
+        <div class="dropdown-content">
+          <div class="cliente">
+              <div class="foto">
+                <img src="img/logo.png">
+              </div>
+              <div>
+                <h1 id="nome">Logado:Marcos Lopes</h1>
+              </div>
+          </div>
+        <a href="#Frota" id="frota">Frota Empresarial</a>
+        <a href="#Frota_realizad">Serviços Realizados</a>
+        <a href="#Frota_serviço">Serviço em andamento</a>
+        <a href="#Frota_manu">Manuntenção Frota</a>
+        <a href="#lista">Lista Manuntenção</a>
+        </div>
+      </div>
+    </header>
+          <main>  
+            <section class="caixa_itens">
+              <div class="Page_inicial">
+              <div id="Frota" class="page"></div>
+              <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1 id="Name Veiculo:"></h1>
+                <button id="serv">Colocar em Serviços</button>
+                <button id="manu">Manuntenção </button>
+                <button id="abas">Abastecer Veiculo</button>
+                <button id="serv">Aposentar Veiculo</button>
+                <button id="inf">Informaçoes Veiculo </button>
+                <div class="success" id="success">
+                  <p id="mens"></p>
+                </div>
+              </div>
+              </div>
+              <div id="myModal_2" class="modal">
+              <div class="modal-content_2">
+                <span class="close">&times;</span>
+                <br>
+                <br>
+                <form name="abastecer">
+                  <div class="input-caixa">
+                    <label>Quantidade Gasolina (Litros)</label>
+                    <input type="number" name="litrs" placeholder="Quantidade Abastecer....">
+                  </div>
+                  <div class="input-caixa">
+                    <input type="button" value="Registrar Abastecimento" id="cal">
+                  </div>
+                </form>
+              </div>
+              </div>
+               <div id="myModal_4" class="modal">
+              <div class="modal-content_2">
+                 <span class="close">&times;</span>
+                 <br>
+                 <br>
+                <form name="Manuntenção">
+                  <div class="input-caixa">
+                    <label>Nome Veiculo</label>
+                    <input type="text" name="veiculos" placeholder="Indentificação Veiculo" disabled>
+                  </div>
+                  <div class="input-caixa">
+                    <label>Tipo de serviço</label>
+                    <textarea name="peças" placeholder="Tipos de serviço prestado"></textarea>
+                  </div>
+                  <div class="input-caixa">
+                    <label>Data Saida Manuntenção</label>
+                    <input type="date" name="data" placeholder="Data de saida manuntenção">
+                  </div>
+                  <div class="input-caixa">
+                    <input type="button" value="Registrar Saida" id="saida">
+                  </div>
+                  <div class="warning" id="err">
+                    <p id="men"></p>
+                  </div>
+                </form>
+              </div>
+              </div>
+               <div id="myModal_5" class="modal">
+              <div class="modal-content_2">
+                 <span class="close">&times;</span>
+                 <br>
+                 <br>
+                <form name="serviço_finalizado">
+                  <div class="input-caixa">
+                    <label>Nome Veiculo</label>
+                    <input type="text" name="veiculos_1" placeholder="Indentificação Veiculo">
+                  </div>
+                  <div class="input-caixa">
+                    <label>Tipo de Viagem:</label>
+                    <input type="text" name="Viagem" placeholder="Tipos de serviço prestado"> 
+                  </div>
+                  <div class="input-caixa">
+                    <label>Data Saida:</label>
+                    <input type="date" name="data_saida" placeholder="Data de saida">
+                  </div>
+                  <div class="input-caixa">
+                    <label>Data entrada:</label>
+                    <input type="date" name="data_entrada" placeholder="Data de chegada">
+                  </div>
+                  <div class="input-caixa">
+                    <label>Cidade serviço:</label>
+                    <input type="text" name="Cidade" placeholder="Cidade de serviço">
+                  </div>
+                  <div class="input-caixa">
+                    <label>Estado:</label>
+                    <input type="text" name="Estado" placeholder="Estado de serviço">
+                  </div>
+                  <div class="input-caixa">
+                    <input type="button" value="Finalizar serviço" id="finaliza">
+                  </div>
+                  <div class="warning" id="errd">
+                    <p id="mend"></p>
+                  </div>
+                </form>
+              </div>
+              </div>
+              <div class="page" id="Frota_serviço">
+                <p id="situação_frota"></p>
+              </div>
+              <div class="page" id="Frota_manu">
+                <p id="situação_frota_2"></p>
+              </div>
+              <div class="page" id="Frota_realizad">
+                <p id="situação_frota_3"></p>
+              </div>
+                 <div id="myModal_3" class="modal">
+              <div class="modal-content_3">
+                <span class="close">&times;</span>
+                <img src="" id="img">
+                <div class="sbre">
+                  <p id="nme"></p>
+                  <p id="cd"></p>
+                  <p id="tip"></p>
+                  <p id="categ"></p>
+                  <p id="marca"></p>
+                  <p id="an"></p>
+                  <p id="passageir"></p>
+              </div>
+              </div>
+              </div>
+              <div class="page" id="lista">
+                <table>
+                  <tr>
+                    <th>Veiculo</th>
+                    <th>Sobre </th>
+                    <th>Data</th>
+                  </tr>
+                  <tbody id="itens">
+                    
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            </div>
+          </main>
+          <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript" src="js/veiculos.js"></script> 
+    </body>
+</html>

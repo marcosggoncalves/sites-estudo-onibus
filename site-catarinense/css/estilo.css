@@ -1,0 +1,411 @@
+  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+*{
+	padding:0;
+	margin:0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+:root{
+	--color-font:#000;
+	--largura-barras:4px;
+}
+html,body{
+	height:100%;
+	flex-direction:inherit;
+}
+header{
+	align-items:center;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+.itens-menu{
+	align-items:center;
+	display:flex;
+	justify-content:center;
+}
+
+.menu-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+}
+nav{
+   margin:2rem ;
+   display:none;
+   width:100%;
+}
+nav ul{
+	display:flex;
+	list-style:none;
+	flex-direction:column;		
+}
+nav li{
+	padding:1rem 2rem;
+	border-bottom:1px solid rgba(33, 33, 33, 0.35);
+	text-align:center;
+}
+nav li:hover{
+	border-left:4px solid #BC4B60;	
+	transition:0.4s;
+}
+
+nav a{
+	text-decoration:none;
+	color:var(--color-font);
+	font-size:1.2rem;
+	text-transform: uppercase;
+	font-size:1.0rem;
+}
+.logo h1{
+	padding:20px 20px;
+	font-weight: inherit;
+	font-size:1.4rem;
+}
+.barras{
+	display:flex;
+}
+.barra_1{
+	width:100%;
+	 border-bottom:var(--largura-barras) solid #BC4B60;
+}
+.barra_2{
+	width:100%;
+	 border-bottom:var(--largura-barras) solid #6098BE	;
+}
+main{
+	padding:20px 20px;	
+}
+.banner{
+	width:100%;
+}
+.banner .hero{
+	position:absolute;
+	padding:20px 20px;
+
+}.banner img{
+	width:100%;
+}
+.hero h1{
+	padding:2px 10px;
+	font-weight:inherit;
+	font-size:1rem;
+	color:#fff;
+	font-weight:bolder;
+	font-size:0.3rem;
+}
+.hero p{
+	width:80%;
+	text-align: justify;
+	font-weight:inherit;
+	padding:0px 0px;
+	font-size:0.2rem;
+	color:#fff;
+}
+.container-titulo {
+	border-left:4px solid #BC4B60;	
+}
+.container-titulo:hover{
+	border-left:4px solid #6098BE;
+	transition:0.3s;	
+}
+.container-titulo h1{
+	font-weight:initial;
+	padding:0.8rem 1rem;
+	font-size:1rem;
+	text-align:left;
+
+}
+#quadro{
+	padding-top:1rem;
+	align-items:center;
+	display:flex;
+	/*flex-direction:column;*/
+	justify-content:space-around;
+	flex-wrap:wrap;
+}
+#quadro p{
+	text-align:center;
+	font-weight:bolder;
+	font-size:0.6rem;
+}
+#quadro img{
+	max-width:8rem;
+}
+#quadro div{
+	margin-right:5px;
+	margin-bottom:10px;
+}
+.editais{
+	align-items:center;
+	display:flex;
+	padding:20px 20px;
+	flex-wrap:wrap;	
+	justify-content:center;
+}
+.pastas{
+	align-content:center;
+	width:540px;
+	display:flex; 
+	flex-wrap:wrap;
+	justify-content:center;
+}
+.pastas div{
+	margin-right:50px;
+}
+.pastas img{
+	max-width:4rem;
+	/*height:200px;*/
+}
+.pastas img:hover{
+	opacity:0.6;
+}
+.pastas h1{
+	text-align:center;
+	font-weight:initial;
+	font-size:0.6rem;
+	line-height:2rem;
+}
+.informa{
+	width:540px;
+}
+.informa p{
+	text-align:justify;
+}
+.informa h1{
+	font-weight:inherit;
+	height:40px;
+	line-height:3rem;
+	font-size:1rem;
+}
+#erros{
+	background:rgba(255, 0, 0, 0.6);
+	padding:20px 20px;
+	border-radius:5px;
+	display:none;
+	color:#fff;
+}
+
+#confirm{
+	background:rgba(0, 128, 0, 0.6);
+	padding:20px 20px;
+	border-radius:5px;
+	display:none;
+	color:#fff;
+}
+.sobre p{
+	text-align:justify;
+	padding:10px 20px;
+}
+.frota{
+	align-items:center;
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+
+.frota h1,footer p{
+	text-align:center;
+	font-weight:initial;
+	font-size:0.6rem;
+	line-height:4rem;
+}
+.frota img{
+	max-width:10rem;
+	/*height:200px;*/
+}
+.frota div:hover{
+	opacity:0.8;
+	transition:0.3s;
+}
+
+@media screen and (min-width:720px){
+body{
+	width:1080px;
+	margin:auto;
+}
+header{
+	align-items:center;
+	display:flex;
+	flex-direction:initial;
+	justify-content:center;
+}
+nav{
+   flex:1;
+   margin:2rem ;
+   display:block;
+
+}
+nav ul{
+	display:flex;
+	list-style:none;
+	flex-direction:inherit;
+	flex-wrap:wrap;
+	justify-content:flex-end;
+}
+nav li{
+	padding:0.4rem 1rem;
+	border:none;
+
+}
+nav li:hover{
+	border-left:4px solid #BC4B60;	
+	transition:0.4s;
+}
+
+nav a{
+	text-decoration:none;
+	color:var(--color-font);
+	font-size:1.2rem;
+	text-transform: uppercase;
+	font-size:1.0rem;
+}
+.logo h1{
+	padding:20px 20px;
+	font-weight: inherit;
+	font-size:1.4rem;
+}
+.barras{
+	display:flex;
+}
+.barra_1{
+	width:100%;
+	 border-bottom:var(--largura-barras) solid #BC4B60;
+}
+.barra_2{
+	width:100%;
+	 border-bottom:var(--largura-barras) solid #6098BE	;
+}
+main{
+	padding:20px 20px;	
+}
+.banner{
+	width:100%;
+}
+.banner .hero{
+	position:absolute;
+	padding:20px 20px;
+}
+.banner img{
+	width:100%;
+}
+.hero h1{
+	padding:380px 20px;
+	font-weight:inherit;
+	font-size:2rem;
+	color:#fff;
+	font-weight:inherit;
+}
+.container-titulo {
+	border-left:4px solid #BC4B60;	
+}
+.container-titulo:hover{
+	border-left:4px solid #6098BE;
+	transition:0.3s;	
+}
+.container-titulo h1{
+	font-weight:initial;
+	padding:0.8rem 1rem;
+	font-size:1.4rem;
+	text-align:left;
+
+}
+#quadro{
+	padding-top:1rem;
+	align-items:inherit;
+	display:flex;
+	flex-direction:inherit;
+	justify-content:inherit;
+	justify-content:space-between;
+
+}
+#quadro p{
+	text-align:right;
+	font-weight:bolder;
+	font-size:0.8rem;
+}
+#quadro img{
+	max-width:25rem;
+}
+.editais{
+	display:flex;
+	padding:20px 20px;
+	flex-wrap:inherit;
+}
+.pastas{
+	width:540px;
+	display:flex;
+	flex-wrap:wrap;
+}
+.pastas div{
+	margin-right:50px;
+}
+.pastas img{
+	max-width:10rem;
+	/*height:200px;*/
+}
+.pastas img:hover{
+	opacity:0.6;
+}
+.pastas h1{
+	text-align:center;
+	font-weight:initial;
+	font-size:1.2rem;
+	line-height:2rem;
+}
+.informa{
+	width:540px;
+}
+.informa p{
+	text-align:justify;
+}
+.informa h1{
+	font-weight:inherit;
+	height:40px;
+	font-size:1.4rem;
+}
+#erros{
+	background:rgba(255, 0, 0, 0.6);
+	padding:20px 20px;
+	border-radius:5px;
+	display:none;
+	color:#fff;
+}
+
+#confirm{
+	background:rgba(0, 128, 0, 0.6);
+	padding:20px 20px;
+	border-radius:5px;
+	display:none;
+	color:#fff;
+}
+.sobre p{
+	text-align:justify;
+	padding:10px 20px;
+}
+.frota{
+	align-content:center;
+	display:flex;
+	flex-direction:inherit;
+	justify-content:center;
+	flex-wrap:wrap;
+}
+.frota h1,footer p{
+	text-align:center;
+	font-weight:initial;
+	font-size:1.2rem;
+	line-height:4rem;
+}
+.frota img{
+	max-width:30rem;
+	height:200px;
+}
+.frota div{
+	margin-right:40px;
+}
+
+.menu-icon{
+	display:none;
+}
+}

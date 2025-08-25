@@ -1,0 +1,276 @@
+*{
+	padding:0;
+	margin:0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+:root{
+	--color-header:#ce6620;
+};
+html,body{
+	height:100%;
+}
+header{
+	background:var(--color-header);
+}
+.logo{
+	max-width:5rem;
+}
+.info_2{
+	position:absolute;
+	width:40%;
+}
+.banner,.banner_galeria{
+	width:100%;
+}
+.informativo{
+	display:block;
+	width:80%;
+	height:100%;
+	margin:auto;
+}
+.informativo div{
+	margin-right:20px;
+}
+.informativo h1{
+	text-align:center;
+	padding:20px 20px;
+	font-weight:unset;
+	font-size:0.8rem;
+}
+.informativo p{
+	font-size:0.8rem;
+	text-align:justify;
+}
+.caixa_sobre{
+	width:100%;
+}
+
+.informativo img{
+	max-width:15rem;
+	margin-top:2rem;
+}
+.title_galeria{
+	background:var(--color-header);
+	padding:0.6rem;
+}
+.title_galeria h1{
+	text-align:center;
+	color:#fff;
+}
+.apresentação_paradiso{
+	width:80%;
+	margin:auto;
+	padding:40px;
+}
+.apresentação_paradiso,h1{
+	font-weight:inherit;
+	font-size:0.9rem;
+	text-align: center;
+}
+.apresentação_paradiso,h2{
+	font-weight:inherit;
+	font-size:0.9rem;
+	text-align:justify;
+}
+
+.apresentação_paradiso button{
+	border:none;
+	background:var(--color-header);
+	width:100%;
+	padding:0.6rem;
+	color:#fff;
+}
+footer{
+	background:var(--color-header);
+	padding:2rem;
+	
+}
+footer h1{
+	color:#fff;
+	font-weight:inherit;
+	font-size:0.8rem;
+}
+.Container-input{
+	display:flex;
+	flex-direction:column;
+}
+legend{
+	text-align:center;
+	line-height:2rem;
+}
+label{
+	line-height:2rem;
+}
+input[type='text'],[type='number'],[type='password'],select{
+	padding:0.6rem;
+}
+input[type='button']{
+	border:none;
+	padding:0.7rem;
+	background:var(--color-header);
+	color:#fff;
+	position:relative;
+	top:1rem;
+	border-bottom:1px solid #eee;
+}
+input:focus{
+	outline:none;
+}
+.caixa_login_cadastro form{
+	width:80%;
+	margin:auto;
+	padding:5rem 2rem;
+}
+.itens{
+	width:80%;
+	margin:auto;
+	padding:20px 20px;
+}
+.admin{
+	width:80%;
+	margin:auto;
+}
+.admin section{
+	line-height:2rem;
+}
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+.itens_2{
+	background:var(--color-header);
+	padding:0.6rem;
+	color:#fff;
+	border-top:1px solid #fff;
+}
+.itens_2 h1,.admin h1{
+	font-size:1rem;
+	line-height:2rem;
+	text-align:justify;
+}
+#myBar,#myBar_2,#myBar_3,#myBar_4 {
+  width: 1%;
+  height: 30px;
+  background-color:var(--color-header);
+}
+@media screen and (min-width:620px){
+header{
+	background:var(--color-header);
+	padding:0.1rem;
+}
+.logo{
+	max-width:10rem;
+}
+.info_2{
+	position:absolute;
+	width:40%;
+}
+.banner,.banner_galeria{
+	width:100%;
+}
+.informativo{
+	display:flex;
+	width:80%;
+	height:300px;
+	margin:auto;
+}
+.informativo div{
+	margin-right:20px;
+}
+.informativo h1{
+	text-align:center;
+	line-height:4rem;
+	font-weight:unset;
+	font-size:1.2rem;
+}
+.informativo p{
+	font-size:1.2rem;
+	text-align:justify;
+}
+.caixa_sobre{
+	width:1000px;
+}
+
+.informativo img{
+	max-width:20rem;
+	margin-top:5rem;
+}
+.title_galeria{
+	background:var(--color-header);
+	padding:1.5rem;
+}
+.title_galeria h1{
+	text-align:center;
+	color:#fff;
+}
+.apresentação_paradiso{
+	width:25%;
+	position:absolute;
+	right:0;
+	padding:10rem 4rem;
+}
+.apresentação_paradiso,h1{
+	font-weight:inherit;
+	font-size:1.2rem;
+	text-align: center;
+}
+.apresentação_paradiso,h2{
+	font-weight:inherit;
+	font-size:1.2rem;
+	text-align:justify;
+}
+
+.apresentação_paradiso button{
+	border:none;
+	background:var(--color-header);
+	width:100%;
+	padding:0.8rem;
+	color:#fff;
+}
+footer{
+	background:var(--color-header);
+	padding:2rem;
+	
+}
+footer h1{
+	color:#fff;
+	font-weight:inherit;
+	font-size:1rem;
+}
+.Container-input{
+	display:flex;
+	flex-direction:column;
+}
+legend{
+	text-align:center;
+	line-height:2rem;
+}
+label{
+	line-height:2rem;
+}
+input[type='text'],[type='number'],[type='password'],select{
+	padding:0.6rem;
+}
+input[type='button']{
+	border:none;
+	padding:0.7rem;
+	background:var(--color-header);
+	color:#fff;
+	position:relative;
+	top:1rem;
+	border-bottom:1px solid #eee;
+}
+input:focus{
+	outline:none;
+}
+.caixa_login_cadastro form{
+	width:28%;
+	margin:auto;
+	padding:5rem 2rem;
+}
+.itens{
+	width:60%;
+	margin:auto;
+	padding:20px 20px;
+}
+}

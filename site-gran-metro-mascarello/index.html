@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meu ônibus</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style type="text/css">	
+	*{
+		padding:0;
+		margin: 0;
+		font-family: 'Roboto', sans-serif;
+	}
+	header,footer{
+		align-items:center;
+		display:flex;
+		justify-content:center;
+		padding:2rem;
+		background:#000;
+	}
+	header img{
+		max-width:20rem;
+	}
+	body{
+		width:940px;
+		margin:auto;
+		box-shadow: 5px 5px 5px 5px  #ddd;
+		padding:15px 15px;
+	}
+	p{
+		text-align:justify;
+	}
+	.text h1{
+		text-align:center;
+		line-height:4rem;
+		font-weight:bold-;
+		font-size:1.2rem;
+	}
+	 h1{
+		line-height:2rem;
+		font-weight:bold;
+		font-size:1.2rem;
+	}
+	details{
+		padding:20px 20px;
+	}
+	.Detalhes{
+		padding:0 50px;
+	}
+	footer h1{
+		font-weight:inherit;
+		color:#fff;
+	}
+	summary{
+		outline:none;
+	}
+	img{
+		width:100%;
+	}
+	.Chassis{
+		align-items:center;
+		display:flex;
+		justify-content:center;
+	}
+	.Chassis div{
+		max-width:8rem;
+		margin-right:20px;
+	}
+	.text ul{
+		text-align:center;
+		list-style:none;
+		padding:20px 20px;
+	}
+	summary::-webkit-details-marker {
+  		display: none
+	}
+	summary:after {
+	  background: #000; 
+	  content: "+"; 
+	  color: #fff; 
+	  float: left; 
+	  font-size: 1.5em; 
+	  font-weight: bold; 
+	  margin: -5px 10px 0 0; 
+	  padding: 0; 
+	  text-align: center; 
+	  width: 20px;
+	}
+	details[open] summary:after {
+	  content: "-";
+	}
+	</style>
+</head>
+<body>
+	<main>
+		<header>
+			<img src="img/logo.png">
+		</header>
+	<div >
+		<img src="img/bus.jpg">
+		<div class="text">
+			<h1>O Gigante do transporte urbano</h1>
+			<p>   O GranMetro é um ônibus urbano com desenho diferenciado, exclusivo para chassis de motor traseiro articulados e biarticulados para aplicações não só em corredores, como o GranMetro BRT, mas em alimentadores tipo BRS. Sua dianteira mais avançada, possui design arredondado com maior área envidraçada e mais aerodinâmica, destacando o itinerário eletrônico de série. O para-brisas com janelas espia laterais completam o design, com tamanho mais adequado à aplicação de ônibus urbano pode ser dividido ou inteiriço. Os limpadores de para-brisas posicionado na parte superior permitem melhor limpeza, os espelhos retrovisores pintados na cor do veículo facilitam a limpeza e o destaque para a frota. Seus faróis exclusivos possuem luz diurna em LED´s com superfície de proteção inteiriça em policarbonato, gera mais segurança devido sua melhor iluminação e proteção em caso de acidentes. A traseira possui iluminação em LED´s independentes para facilitar a manutenção, dobrando e área luminosa para as luzes de freio comparado com os urbanos convencionais. Todo o ambiente interno também possui iluminação em LED´s, as paredes de separação são criadas com layout moderno e confeccionadas em material mais seguro. O painel tem um desenho ergonômico e amplo facilitando o acesso dos passageiros ao interior do veículo. O GranMetro está apto a receber os chassis de classificação Euro V de todas as montadoras.</p>
+		</div>
+		<details>
+			<summary>Detalhes</summary>
+			<div class="Detalhes">
+				<ul>
+					<li>Comprimento - 12.000 à 13.200 mm (4x2), 15.000 ( 6x2), 21.000</li>
+					<li>Largura - 2.600 mm </li>
+					<li>Altura total - 3.350 mm</li>
+					<li>Passageiros sentados - Conforme a planta</li>
+					<li>Passageiros em pé - Conforme a planta</li>
+				</ul>
+			</div>
+		</details>
+	</div>
+	<div class="Chassis">
+		<div>
+			<img src="img/1.jpeg">
+		</div>
+		<div>
+			<img src="img/2.jpg">
+		</div>
+		<div>
+			<img src="img/3.webp">
+		</div>
+		<div>
+			<img src="img/4.jpeg">
+		</div>
+		<div>
+			<img src="img/5.jpeg">
+		</div>
+	</div>
+	<div class="text">
+		<h1>Manual veiculo</h1>
+		<ul>
+			<li><a href="http://www.mascarello.com.br/files/manuais/2015_08_21_135701.pdf">http://www.mascarello.com.br/files/manuais/2015_08_21_135701.pdf</a></li>
+		</ul>
+	</div>
+	<div class="text">
+		<h1>Fontes Pesquisas</h1>
+		<ul>
+			<li><a href="http://www.mascarello.com.br/ptb/produto/urbanos/gran_metro">http://www.mascarello.com.br/ptb/produto/urbanos/gran_metro</a></li>
+			<li><a href="https://www.google.com.br/">https://www.google.com.br/</a></li>
+		</ul>
+	</div>
+	<footer>
+		<h1>&copy;Site Teste Aulas - Desenvolvedor Marcos Lopes</h1>
+	</footer>
+</main>
+</body>
+</html>

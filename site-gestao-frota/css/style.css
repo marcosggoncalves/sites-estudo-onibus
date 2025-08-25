@@ -1,0 +1,255 @@
+ * {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --color-fundo-loader: #142545;
+ 
+    --font: #fff;
+    --font_logo: #a9acb2;
+    --font_2: #000;
+}
+html,
+body {
+    height: 100%;
+}
+main{
+  padding:40px 20px;
+}
+header{
+  display: flex;
+  flex-direction: column;
+  background:var(--color-fundo-loader);
+}
+
+header .logo{
+  align-items: center;
+  display: flex;
+  height: 4.5rem;
+  justify-content: center;
+}
+
+header .logo img{
+  height: inherit; 
+}
+.success{
+  display:none;
+}
+.success p{
+  line-height:4rem;
+  color:var(--color-fundo-loader);
+}
+.sbre_2{
+  background:#ededed;
+}
+.sbre_2 p{
+  padding:0px 30px;
+}
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.page:not(:target){
+  display: none;
+}
+
+.page:target{
+  display: flex;
+}
+
+.modal-content_3 img{
+  width:100%;
+}
+.modal h1{
+  line-height:4rem;
+  font-size:1rem;
+  text-align:center;
+}
+.modal button{
+  display:inline-block;
+  border-bottom:  1px solid #fff;
+  padding:0.6rem 1rem;
+  background:var(--color-fundo-loader);
+  color:#fff;
+  width:19%;
+  font-size:0.7rem;
+  text-align:center;
+}
+.modal-content_3{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 23%;
+}
+.modal-content_2{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 23%;
+}
+.caixa_itens{
+  width:1200px;
+  margin:auto;
+  box-shadow: 1px 2px 2px 1px #d2d2d2;
+  padding: 40px 40px;
+}
+#Frota,#Frota_serviço,#Frota_manu,#Frota_realizad{
+  flex-wrap:wrap;
+}
+#Frota,#Frota_serviço,#Frota_manu{
+  justify-content:center;
+  align-items:center;
+}
+#Frota div,#Frota_serviço div,#Frota_manu div,#Frota_realizad div{
+  padding:10px 0px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#Frota img,#Frota_serviço img,#Frota_manu img,#Frota_realizad img{
+  max-width:12rem;
+}
+#Frota p ,#Frota_serviço p ,#Frota_manu p,#Frota_realizad p{
+  text-align:center;
+  line-height:2rem;
+}
+#Frota button,#Frota_serviço button,#Frota_manu button,#Frota_realizad button{
+  padding:0.4rem 1rem;
+  color:var(--font);
+  background:var(--color-fundo-loader);
+  border:2px solid #dedede;
+}
+input,button:focus{
+  outline:none;
+}
+.btn_abre {
+    background-color:unset;
+    color: white;
+    padding: 10px 1rem;
+    font-size: 0.8rem;
+    border: 1px solid #ddd;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+  text-align:center;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom:1px solid #ddd;
+}
+.dropdown-content a:hover {
+  background-color: var(--color-fundo-loader);
+  color:#fff; 
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.input-caixa{
+  display:flex;
+  flex-direction:column;
+}
+label{
+  line-height:2rem;
+  font-size:0.8rem;
+}
+input{
+  padding:0.2rem;
+}
+input[type="button"]{
+  border:none;
+  background:var(--color-fundo-loader);
+  color:var(--font);
+  padding:0.6rem;
+  position:relative;
+  top:0.5rem;
+} 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+textarea {
+  height:200px;
+}
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: var(--color-fundo-loader);
+    color: white;
+}
+.sbre p{
+
+  border-bottom:1px solid #dedede;
+  padding:10px 20px;
+}
+tr:hover {background-color:#f5f5f5;}
+.cliente{
+  align-items:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  border:1px solid #ddd;
+  padding:20px 30px;
+}
+.cliente div{
+  max-width:15rem;
+}
+.foto img{
+  width:12rem;
+}
+.cliente div h1{
+  font-size:0.9rem;
+}
+
+@media screen and (min-width: 640px){
+  header{
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 2rem;
+  }
+}
